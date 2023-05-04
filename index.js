@@ -7,5 +7,5 @@ const port = process.env.PORT;
 
 
 app.listen(port, ()=>{
-    console.log("Сервер запущен. Порт 3001");
+    console.log("Сервер запущен. Порт 3000");
 })
