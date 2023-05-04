@@ -14,6 +14,11 @@ route.get("/", (req, res) => {
   res.send(data);
 });
 
+route.get("/:id", (req, res) => {
+  const { id } = req.params;
+  let data = getUserById(id);
+  res.send(data);
+});
 
 
 
