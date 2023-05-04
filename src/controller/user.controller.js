@@ -19,7 +19,10 @@ route.get("/:id", (req, res) => {
   let data = getUserById(id);
   res.send(data);
 });
-
+route.post("/", (req, res) => {
+  const { name, surname, email, pwd } = req.body;
+  res.send(createUser(name, surname, email, pwd));
+});
 
 
 module.exports = route;
