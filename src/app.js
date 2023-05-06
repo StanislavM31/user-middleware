@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(`/user`, user);
 
 app.use((err, req, res, next) => {
-    res.send('its an error')
+    res.send(err.message);
 })
 
 module.exports = {app};
