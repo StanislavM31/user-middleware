@@ -1,11 +1,1 @@
-[
-  { "id": 8, "name": "Рейна", "surname": "Собачкова", "email": "mailto:dogdoggav@mail.ru", "pwd": "12345678" },
-  { "id": 9, "name": "Максим", "surname": "Николаев", "email": "mailto:hanna@gmail.com", "pwd": "12345678" },
-  { "id": 10, "name": "Константин", "surname": "Константинов", "email": "mailto:konst@mail.ru", "pwd": "12345678" },
-  { "name": "Hanna", "surname": "Pleshko", "email": "mailto:hannapleshko@gmail.com", "pwd": "12345678" },
-  { "id": "14", "name": "Hanna", "surname": "Pleshko", "email": "mailto:hannapleshko@gmail.com", "pwd": "12345678" },
-  { "id": "13", "name": "Hanna", "surname": "Pleshko", "email": "mailto:hannapleshko@gmail.com", "pwd": "122222278" },
-  { "id": 13, "name": "Hanna", "surname": "Pleshko", "email": "mailto:hannapleshko@gmail.com", "pwd": "1234555678" },
-  { "id": 14, "name": "Hanna", "surname": "Pleshko", "email": "mailto:hannapleshko@gmail.com", "pwd": "1234555678" },
-  { "id": "11", "name": "Hanna", "surname": "Pleshko", "email": "superhannapleshko@gmail.com", "pwd": "12345678" }
-]
+[{"id":8,"name":"Рейна","surname":"Собачкова","email":"mailto:dogdoggav@mail.ru","pwd":"12345678"},{"id":9,"name":"Максим","surname":"Николаев","email":"mailto:hanna@gmail.com","pwd":"12345678"},{"id":10,"name":"Константин","surname":"Константинов","email":"mailto:konst@mail.ru","pwd":"12345678"},{"name":"Hanna","surname":"Pleshko","email":"mailto:hannapleshko@gmail.com","pwd":"12345678"},{"id":"14","name":"Hanna","surname":"Pleshko","email":"mailto:hannapleshko@gmail.com","pwd":"12345678"},{"id":"13","name":"Hanna","surname":"Pleshko","email":"mailto:hannapleshko@gmail.com","pwd":"122222278"},{"id":13,"name":"Hanna","surname":"Pleshko","email":"mailto:hannapleshko@gmail.com","pwd":"1234555678"},{"id":14,"name":"Hanna","surname":"Pleshko","email":"mailto:hannapleshko@gmail.com","pwd":"1234555678"},{"id":"11","name":"Hanna","surname":"Pleshko","email":"superhannapleshko@gmail.com","pwd":"12345678"},{"id":10,"name":"Hanna","surname":"Pleshko","email":"hannapleshko@gmail.com","pwd":"12345678"},{"id":11,"name":"Hanna","surname":"Pleshko","email":"hannapleshko@gmail.com","pwd":"fishka11"}]

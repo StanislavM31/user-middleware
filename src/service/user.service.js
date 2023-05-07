@@ -13,5 +13,13 @@ function getUserById(id) {
   return filtered;
 }
 
+function createUser(name, surname, email, pwd) {
+  const array = JSON.parse(fs.readFileSync(path));
 
-module.exports = { getAllUsers, getUserById};
+  array.push({ id: array.length + 1, name, surname, email, pwd });
+
+  fs.writeFileSync(path, JSON.stringify(array));
+  return array;
+}
+
+module.exports = { getAllUsers, getUserById, createUser};
