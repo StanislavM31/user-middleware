@@ -6,5 +6,12 @@ function getAllUsers() {
   return array;
 }
 
+function getUserById(id) {
+  const array = JSON.parse(fs.readFileSync(path));
 
-module.exports = { getAllUsers};
+  const filtered = array.filter(el => el.id == id);
+  return filtered;
+}
+
+
+module.exports = { getAllUsers, getUserById};
