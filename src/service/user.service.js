@@ -22,4 +22,16 @@ function createUser(name, surname, email, pwd) {
   return array;
 }
 
-module.exports = { getAllUsers, getUserById, createUser};
+function updateUserById(id, name, surname, email, pwd) {
+  const array = JSON.parse(fs.readFileSync(path));
+
+  const filtered = array.filter(el => el.id != id);
+  if (array.length == filtered.length) throw new Error(`id is not a found`);
+
+  filtered.push({ id, name, surname, email, pwd });
+
+  fs.writeFileSync(path, JSON.stringify(filtered));
+  return filtered;
+}
+
+module.exports = { getAllUsers, getUserById, createUser, updateUserById};
