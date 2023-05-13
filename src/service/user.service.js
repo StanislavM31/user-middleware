@@ -34,4 +34,13 @@ function updateUserById(id, name, surname, email, pwd) {
   return filtered;
 }
 
-module.exports = { getAllUsers, getUserById, createUser, updateUserById};
+function deleteUser(id) {
+  const arr = JSON.parse(fs.readFileSync(path));
+
+  const filtered = arr.filter(el => el.id != id);
+
+  fs.writeFileSync(path, JSON.stringify(filtered));
+  return filtered;
+}
+
+module.exports = { getAllUsers, getUserById, createUser, updateUserById, deleteUser};

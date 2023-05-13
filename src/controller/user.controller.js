@@ -2,7 +2,9 @@ const express = require("express");
 const {
   getAllUsers,
   getUserById,
-  createUser, updateUserById
+  createUser,
+  updateUserById,
+  deleteUser,
 } = require("../service/user.service.js");
 
 let route = express.Router();
@@ -25,7 +27,7 @@ route.post(`/`, (req, res) => {
   res.send(data);
 });
 
-route.put('/:id', (req, res) => {
+route.put("/:id", (req, res) => {
   try {
     const { id } = req.params;
     const { name, surname, email, pwd } = req.body;
@@ -36,6 +38,14 @@ route.put('/:id', (req, res) => {
   }
 });
 
-
+route.delete("/:id", (req, res) => {
+  try {
+    const { id } = req.params;
+    const data = deleteUser(id);
+    res.send(data);
+  } catch (error) {
+    res.send(error.message);
+  }
+});
 
 module.exports = route;
