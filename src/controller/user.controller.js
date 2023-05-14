@@ -7,6 +7,7 @@ const {
   deleteUser,
 } = require("../service/user.service.js");
 
+const isValidUserData = require("../helper/validation")
 let route = express.Router();
 
 route.get("/", (req, res) => {
@@ -20,7 +21,7 @@ route.get("/:id", (req, res) => {
   res.send(data);
 });
 
-route.post(`/`, (req, res) => {
+route.post(`/`, isValidUserData, (req, res) => {
   const { name, surname, email, pwd } = req.body;
 
   const data = createUser(name, surname, email, pwd);
